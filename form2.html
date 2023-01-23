@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>forms</title>
+<style type="text/css">
+
+    textarea {
+    width: 250px;
+    height: 7em;
+    }
+    
+    input, select, textarea {
+    color: rgb(149, 255, 0);
+    }
+    
+    
+    </style>
+    
+</head>
+<body>
+<<form style="background-color:blueviolet">
+	<fieldset>
+	<legend>Personal Details</legend>
+	
+
+
+		<label>
+		Salutation
+		<br />
+		<select name="salutation">
+			<option>--None--</option>
+			<option>sir</option>
+			<option>Ms.</option>
+			<option>Mrs.</option>
+			<option>nthng.</option>
+			<option>Prof.</option>
+		</select>
+		</label><br><br>
+
+   
+		<label>First name: <input name="firstName" /></label><br><br>
+	
+    
+		<label>Last name: <input name="lastName" /></label><br><br>
+	
+
+		Gender :
+		<label><input type="radio" name="gender" value="male" /> Male</label>
+		<label><input type="radio" name="gender" value="female" /> Female</label><br><br>
+	
+    
+		<label>Email:<input type="email" name="email" /></label><br><br>
+	
+     
+		<label>Date of Birth:<input type="date" name="birthDate"></label><br><br>
+	
+		<label>
+		Address :
+		<br />
+		<textarea name="address" cols="30" rows="3"></textarea>
+		</label><br><br>
+	
+
+
+		<button type="submit">Submit</button><br><br>
+	
+
+ </fieldset>
+</form>
+</body>
+</html>
