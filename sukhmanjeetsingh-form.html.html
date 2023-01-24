@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+      }
+      table,
+      th,
+      td,
+      tr {
+        border: 2px black solid;
+        border-collapse: collapse;
+        
+      }
+      th{
+        padding-left: 40px;
+      }
+      td{
+        padding: 10px;
+      }
+      input{
+       border: 2px ;
+        border-color:rgb(228, 225, 236);  
+        border-style:inset ; 
+        background-color: azure;
+      
+        
+        
+      }
+      textarea{
+        border: 2px ;
+        border-color:rgb(228, 225, 236);  
+        border-style:inset ; 
+        background-color: azure;
+      
+
+      }
+      button{
+        border-color: white;
+        border-style: outset;
+      }
+      
+      .dotblack{
+        
+      accent-color: black;
+        
+      }
+      .center{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <table class="center">
+      <tr>
+        <th>Last name</th>
+        <td><input type="text" placeholder="Nakov"></td>
+      </tr>
+      <tr>
+        <th>First Name</th>
+        <td><input type="text" placeholder="Svetlin" ></td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td><textarea name="address" id="" cols="30" rows="2">17 hristo botev str floor,apt,12</textarea></td>
+      </tr>
+      <tr>
+        <th>City</th>
+        <td><input type="text" placeholder="Kaspichan "></td>
+      </tr>
+      <tr >
+        <th>Zip/Postal Code</th>
+        <td >
+          <input type="number" placeholder="9325" style="width: 95px;" >
+          state
+          <input type="text" >
+        </td>
+      </tr>
+      <tr>
+        <th>Country </th>
+        <td>
+          <select name="country" >
+            <option value="ind">india</option>
+            <option value="sril">srilanka</option>
+            <option value="pak">pakistan</option>
+            <option value="ban">bangladesh</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Phone(country code,<br />area code,number)</th>
+        <td >+(<input type="number" placeholder="359" style="width: 67px;">)
+            <input type="number" placeholder="88" style="width: 45px;">
+            -<input type="number" placeholder="8334343" style="width: 150px;"></td>
+      </tr>
+
+      <tr>
+        <th>Email</th>
+        <td><input type="email" placeholder="nakov@kaspichan.org"></td>
+      </tr>
+      <tr>
+        <th>Date of Birth</th>
+        <td >
+          Month <input type="number"  style="width: 45px;" placeholder="06" > Day <input type="number" style="width: 45px;" placeholder="14"> Year(4 digit)
+          <input type="number" placeholder="1980" style="width: 90px;" >
+        </td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td><select name="gender" id="">
+            <option value="ml">male</option>
+            <option value="fe">female</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th>Starting date</th>
+        <td >Spring 2006
+            <input type="radio" id="spring" name="sdate" class="dotblack">
+            Summer 2006
+            <input type="radio" id="summer" name="sdate" class="dotblack">
+        
+        </td>
+      </tr>
+      <tr>
+        <th>Comments/Questions</th>
+        <td><textarea name="comments" id="" cols="30" rows="10"> Please snd me mor information about the loading</textarea></td>
+      </tr>
+      <tr style="background-color: aquamarine;">
+        <td  colspan="2"> <center><button>submit</button> <button>clear this form</button>
+        <center></td>
+      </tr>
+    </table>
+  </body>
+</html>
