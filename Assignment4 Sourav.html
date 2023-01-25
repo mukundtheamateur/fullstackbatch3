@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <style>
+  table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    height: 200%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    height: 80px;
+  }
+  input[type="submit"], input[type="button"] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  tr td[colspan='2'] {
+    text-align: center;
+  }
+</style>
+
+<table>
+  <tr>
+    <th>First Name:</th>
+    <td><input type="text" id="name" name="name" placeholder="Sourav"></td>
+  </tr>
+  <tr>
+    <th>Last Name:</th>
+    <td><input type="text" id="name" name="name" placeholder="Sharma"></td>
+  </tr>
+  <tr>
+    <th>Address:</th>
+    <td>
+      <textarea id="address" name="address" placeholder="Enter your residential address"></textarea>
+    </td>
+  </tr>
+  
+  <tr>
+    <th>ZIP/Postal code:</th>
+    <td><input type="number" id="name" name="name" placeholder="143501"></td>
+  </tr>
+  <tr>
+    <th>Country:</th>
+    <td><input type="text" id="name" name="name" placeholder="Hindustan"></td>
+  </tr>
+  <tr>
+    <th>Mobile Number:</th>
+    <td><input type="tel" id="name" name="name" placeholder=7986478*** ></td>
+  </tr>
+  <tr>
+    <th>Email:</th>
+    <td><input type="email" id="email" name="email" placeholder="ssouravs1799@gmail.com"></td>
+  </tr>
+  
+  <tr>
+    <th>Date of Birth:</th>
+    <td><input type="date" id="dob" name="dob"></td>
+  </tr>
+  <tr>
+    <th>Gender:</th>
+    <td>
+      <select id="gender" name="gender">
+        <option value="" selected>Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th>Starting Date:</th>
+    <td>
+      <input type="radio" id="spring 2006" name="Starting Date" value="season">
+      <label for="Spring 2006">Spring 2006</label>
+      <input type="radio" id="Summer 2007" name="Starting Date" value="season">
+      <label for="Summer 2007">Summer 2007</label>
+      
+    </td>
+  </tr>
+  
+  
+  <tr>
+    <th>Question/Comments:</th>
+    <td>
+      <textarea id="address" name="address"  placeholder="Any Query"></textarea>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" align="center">
+      <input type="submit" value="Submit" >
+      <input type="button" value="Clear" >
+    </td>
+  </tr>
+      </form>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
