@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+
+    </HEAD>
+    <style>table,th,td { border:1px solid black ; background-color: bisque;
+    border-collapse: collapse; margin:auto;} 
+
+    td {padding: 2px;}
+    th,td input{border-style: inset;}
+    </style>
+    <BODY style="background-color: rgb(114, 200, 231);">
+        
+        <form>
+        <h2>Details</h2>
+        <table style="width: auto">
+            
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" placeholder=""></td>
+                
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td><input type="text" placeholder=""></td>
+                
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><input type="text" size="40" placeholder="" style="height: 100px;"></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td><input type="text" size="5" placeholder=""> State <input type="text"></th>
+                </td>
+            </tr>
+            <tr>
+                <th>Zip/Postal Code</th>
+                <td><input type="number" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select name="Country" id="Country">
+                        <option value="INDIA">INDIA</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Europe">Europe</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Phone{Country code,area code,}</th>
+                <td><input type="text" size="1">  <input type="text" size="2">  <input type="text" size="6">             
+            </td>     
+            </tr>
+            <tr>  
+                <th>E-mail</th>
+                <td><input type="email" placeholder=""></td>
+            </tr>
+            <tr>
+                <th>Birth Date</th>
+                <td>Month <input type="text" size="4"> Day <input type="text" size="4"> Year(4 digit) <input type="text" size="4"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option></select>
+                    </td>
+            </tr>
+            <tr>
+                <th>Starting Date</th>
+                <td>
+                    <input type="radio" name="radio" size="5">Spring 2006
+                    <input type="radio" name="radio" size="5">Summer 2006
+                </td>
+            </tr>
+            <tr>
+                <th>Comments/Questions</th>
+                <td><input type="text" size="40" style="height: 100px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="blue">
+                    <center>
+                        <input type="Submit" value="submit">
+                        <input type="Reset" value="Clear this form">    
+                    </center>
+                </td>
+            </tr>       
+        </table>    
+        </form>
+    </BODY>
+</HTML>
