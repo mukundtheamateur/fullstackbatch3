@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid blueviolet;
+            border-collapse: collapse;
+            color: rgb(134, 58, 142);
+            background-color: goldenrod;
+          
+        }
+
+        th {
+            color: rgb(138, 27, 97);
+            
+        }
+   
+    </style>
+</head>
+
+<body style="background-color: powderblue;">
+    <center>
+
+        <form>
+            <fieldset>
+                <table>
+                    <tr>
+                        <th>last Name</th>
+                        <td><input type="text" required placeholder="Surname"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            First Name
+                        </th>
+                        <td><input type="text" required placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Adderss
+                        </th>
+                        <td><textarea name="Adderss" cols="30" rows="3" placeholder="Address.."></textarea><br></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            City
+                        </th>
+                        <td> <input type="text">
+                            state
+                            <input type="text">
+                    </tr>
+                    <tr>
+                        <th>
+                            Zip/Postal Code
+                        </th>
+                        <td> <input type="number" required></td>
+                    </tr>
+                    <tr>
+                        <th> Country</th>
+                        <td> <select name="Country" id="">
+                                <option value="af">Afghanistan</option>
+                                <option value="au">Australia</option>
+                                <option value="ba">Bangladesh</option>
+                                <option value="nz">New Zealand</option>
+                                <option value="india">India</option>
+
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th>
+                          Phone(country code, area code, number)
+                        </th>
+                        <td> <input type="number" required></td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            E-mail
+                        </th>
+                        <td> <input type="email" required></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Brith date
+                        </th>
+                        <td>Month <input type="number" style="width: 30px;"> Day <input type="number" style="width: 30px;"> Year(4Digit)<input
+                                type="number" style="width: 60px;"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Gender
+                        </th>
+                        <td> <select name="Gender" id="">
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="others">others</option>
+                            </select><br></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Starting date
+                        </th>
+                        <td><input type="radio"> spring 2006
+                            <input type="radio"> summer 2006
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            Comment/Question
+                        </th>
+                        <td> <textarea name="Comment/Question" cols="30"
+                                rows="4" placeholder="Please send me more information about the lodging"></textarea></td>
+                    </tr>
+
+
+
+
+                </table><br>
+                <input type="submit">
+                <button type="button">clear this form</button>
+        </form>
+    </center>
+
+</body>
+
+</html>
