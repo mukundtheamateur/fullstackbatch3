@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1</title>
+</head>
+<body style="background-color:#1A120B; color: #E5E5CB;"><!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<center>
+<h1> PARMINDER KAUR</h1>
+<img src="parminderr_assignment1_files/DocScanner%20Jan%2010,%202023%2016-53PAR.jpg" alt="flower" width="300" height="300">
+<br>
+<h2>
+Student[punjabi university patiala][MCA][patiala]
+</h2>
+<p style="text-align:center"> 
+To gain knowledge of interpretation and analysis.proficiency with full stack web<br>
+ development technologies, fimiliarity with various linux distributions.<br>
+ seeking an opportunity so i can make the best use of my potential in exploring and enchancing my<br>
+  technical knowledge. currently pursuing[MCA]from[punjabi university patiala]
+</p>
+<hr>
+<h2> Education</h2>
+<p><i>[Punjabi university,[PATIALA.]</i></p>
+<br>
+[XIIth standard dashmesh girls college],[MUKERIAN]
+[Xth standard G.R.D public school],[HAJIPUR]
+</center>
+    
+    
+<!-- Code inject--></body></html>
