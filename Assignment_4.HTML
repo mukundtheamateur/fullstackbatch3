@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Comatible" content="IE-edge,chrome=1">
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<title>forms</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table.center{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    tr.sub{
+        background-color: rgb(195, 238, 238);
+        text-align: center;
+    }
+    input.comment{
+        height: 1in;
+        width: 6in;
+    }
+    input.adress{
+        height: 1in;
+        width: 6in;
+    }
+    
+</style>
+<body>
+    <form action="/FULL_STACK5.HTML" method="" onsubmit="">
+        <fieldset>
+            <table class="center" style="width: 1024px; height: 512px;">
+            <tr>
+                <th>Last Name</th>
+                <td colspan="3">
+                    <input type="text" size="50">
+                </td>
+                
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td colspan="3">
+                    <input type="text" size="50">
+                </td>
+            </tr><br><br>
+            <tr>
+                <th>Adress</th>
+                <td colspan="3">
+                    <input type="text" size="50" class="adress" placeholder="Write Address here...">
+                </td>
+            </tr>
+            <tr>
+                <th>city</th>
+                <td>
+                    <input type="text" size="30">
+                </td>
+                <th>State</th>
+                <td>
+                    <input type="text" size="10">
+                </td>
+            </tr><br>
+            <tr>
+                <th>Zip/Postal Code</th>
+                <td colspan="3">
+                    <input type="text" size="10">
+                </td>
+            </tr><br>
+            <tr>
+                <th>Country</th>
+                <td colspan="3">
+                    <select name="country" id="country" size="1">
+                        <option value="india">India</option>
+                        <option value="usa">U.S.A</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Phone(country code,area code,number)</th>
+                <td colspan="3">
+                    <label>(+</label>
+                    <input type="text" size="5">
+                    <label>)</label>
+                    <input type="text" size="5">
+                    <label>-</label>
+                    <input type="text" size="20">
+                </td>
+            </tr><br>
+            <tr>
+                <th>Email</th>
+                <td colspan="3">
+                    <input type="email" size="50">
+                </td>
+            </tr><br>
+            <tr>
+                <th>Birth date</th>
+                <td>
+                    <label>Month</label>
+                    <input type="number">
+                </td>
+                
+                <td>
+                    <label>Day</label>
+                    <input type="number">
+                </td>
+                
+                <td>
+                    <label>Year(4 digit)</label>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td colspan="3">
+                    <select name="gender" id="gender" size="1">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>    
+
+            </tr>
+            <tr>
+                <th>Starting date</th>
+                <td colspan="3">
+                    <input type="radio" id="html" name="Starting date" value="Spring 2006">
+                    <label>Spring 2006</label>
+                    <input type="radio" id="html" name="Starting date" value="Summer 2006">
+                    <label>Summer 2006</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Comments/Questions</th>
+                <td colspan="3">
+                    <input type="text" size="50" class="comment" placeholder="Write comments/Questions here...">  
+                </td>        
+            </tr>        
+                
+            <tr class="sub">
+                <td colspan="4">
+                    <input type="submit" value="Submit" >
+                    <input type="reset" value="Clear This Form">
+                </td>    
+            </tr>
+            </table>
+        </fieldset>
+    </form>        
+</body>
+<html>
